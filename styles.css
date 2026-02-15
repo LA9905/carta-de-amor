@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+#heart-screen {
+  background: radial-gradient(circle at center, rgba(255,255,255,0.3) 0%, transparent 70%);
+}
+
+#letter-screen .bg-\[\#f9f0e1\] {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+}

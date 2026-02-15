@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti, mi amor ❤️</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-pink-300 via-rose-200 to-red-300 min-h-screen">
+
+  <!-- Pantalla del corazón -->
+  <div id="heart-screen" class="flex flex-col items-center justify-center min-h-screen transition-all duration-700">
+    <div onclick="openLetter()" 
+         class="text-[280px] cursor-pointer hover:scale-110 transition-transform duration-300 animate-pulse">
+      ❤️
+    </div>
+    <p class="text-white text-3xl font-serif mt-8 tracking-widest">Haz clic en el corazón</p>
+  </div>
+
+  <!-- Pantalla de la carta -->
+  <div id="letter-screen" class="hidden min-h-screen flex items-start justify-center p-6 pt-12 overflow-y-auto">
+    <div class="max-w-5xl w-full bg-[#f9f0e1] shadow-2xl rounded-3xl overflow-hidden relative">
+      
+      <!-- Cabecera -->
+      <div class="bg-rose-600 text-white py-6 text-center">
+        <h1 class="text-5xl font-great-vibes tracking-wider">Mi carta para ti</h1>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-8 p-10">
+        
+        <!-- Foto -->
+        <div class="md:w-5/12 flex items-center justify-center">
+          <img id="couple-photo" 
+               src="public/Luis-Patty.jpeg" 
+               alt="Nosotros" 
+               class="rounded-2xl shadow-xl max-h-[520px] w-full object-cover border-8 border-white">
+        </div>
+
+        <!-- Carta -->
+        <div class="md:w-7/12 font-serif text-gray-800 leading-relaxed text-lg">
+          <p class="mb-6">Mi amor,</p>
+          
+          <p class="mb-6">No existen palabras suficientes en ningún idioma para decirte todo lo que siento por ti. Desde el primer día que te vi, supe que mi vida había cambiado para siempre. Tu sonrisa se convirtió en mi luz favorita, tu voz en la melodía que calma todas mis tormentas y tu amor en el hogar que siempre había buscado.</p>
+          
+          <p class="mb-6">Cada momento a tu lado es un regalo: las noches hablando hasta que sale el sol, las risas tontas, los abrazos que curan todo, los besos que me hacen olvidar el mundo. Contigo he aprendido que el amor verdadero no es perfecto, es real, es paciente, es elegirte cada día aunque haya días difíciles.</p>
+          
+          <p class="mb-6">Te amo por cómo me miras, por cómo me cuidas, por cómo me haces querer ser mejor persona. Te amo cuando estás feliz, cuando estás cansada, cuando cocinas, cuando bailas en la cocina, cuando me abrazas fuerte como si nunca quisieras soltarme. Te amo en silencio y a gritos.</p>
+          
+          <p class="mb-6">Gracias por elegirme, por confiar en mí, por construir esta hermosa historia juntos. Prometo seguir amándote con la misma intensidad (o más) cada día de mi vida, en las alegrías y en las tormentas, en los sueños cumplidos y en los que aún están por venir.</p>
+          
+          <p class="mb-10">Eres mi presente, mi futuro y mi eternidad.</p>
+          
+          <div class="text-right">
+            <p class="font-great-vibes text-4xl text-rose-600">Con todo mi corazón y mi alma,</p>
+            <p class="text-2xl mt-2">Luis P. ❤️</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón para volver -->
+      <div class="text-center pb-8">
+        <button onclick="closeLetter()" 
+                class="bg-rose-600 hover:bg-rose-700 text-white px-10 py-4 rounded-2xl text-lg font-medium transition-all">
+          Volver al corazón
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
